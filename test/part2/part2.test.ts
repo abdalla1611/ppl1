@@ -23,4 +23,4 @@ describe("Assignment 1 Part 2", () => {
             expect(isPaired("(]")).to.be.false;
         });
     });
-});
+}); 
