@@ -10,3 +10,4 @@ export const runLengthEncoding = undefined;
 
 /* Question 3 */
 export const isPaired = undefined;
+
