@@ -9,10 +9,13 @@ const findOrThrow = <T>(pred: (x: T) => boolean, a: T[]): T => {
 }
 
 export const findResult = <T>(pred: (x: T) => boolean, a: T[]): Result<T> => {
-    for (let i = 0; i < a.length; i++) {
-    if (pred(a[i])) return makeOk(a[i]);
+    try{
+        const x = findOrThrow(pred,a);
+        return makeOk(x);
     }
-    return makeFailure(" no such element exists");
+    catch(e){
+        return makeFailure(e);
+    }
     };
 
 /* Client code */
