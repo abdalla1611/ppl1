@@ -28,5 +28,5 @@ export const queueManip = (queue:Queue) : [number[] ,number]=>{
        return newQ2;
     });
     const outPut = newq(queue);
-    return dequeue(outPut[0])  ;
+    return dequeue(outPut[0]);
 };

@@ -13,7 +13,6 @@ describe("Assignment 1 Part 2", () => {
             expect(runLengthEncoding("aaaabbbccd")).to.equal("a4b3c2d");
         });
     });
-
     describe("isPaired", () => {
         it("returns true for a string with paired parens", () => {
             expect(isPaired("([{}])")).to.be.true;
